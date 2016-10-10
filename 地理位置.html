@@ -7,7 +7,7 @@
 	if(navigator.geolocation){
 		navigator.geolocation.getCurrentPosition(function(ev){
 			var msg=ev.coords;
-			conaole.log(ev.coords);
+			console.log(ev.coords);
 		},function(ev){
 			alert('失败');
 		})
