@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<script>
+	if(navigator.geolocation){
+		navigator.geolocation.getCurrentPosition(function(ev){
+			var msg=ev.coords;
+			conaole.log(ev.coords);
+		},function(ev){
+			alert('失败');
+		})
+		navigator.geolocation.watchPosition(function(ev){
+			var msg=ev.coords;
+			for(var name in msg){
+				document.write(name+':'+msg[name]+'<br>');	
+			}
+		},function(ev){
+			alert('失败');
+		})	
+	}else{
+		alert('不支持');
+	}
+</script>
+</head>
+
+<body>
+</body>
+</html>
