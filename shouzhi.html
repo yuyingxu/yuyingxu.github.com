@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0,maximum-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta content="yes" name="apple-touch-fullscreen"/>
+<title>无标题文档</title>
+<script>
+	(function(win,doc){
+		function setFont(){
+			doc.documentElement.style.fontSize=doc.documentElement.clientWidth/16+'px';
+		}
+		setFont();
+		window.addEventListener('resize',setFont,false);
+			
+	})(window,document);
+</script>
+<style>
+	*{ margin:0; padding:0;//}
+	div{
+		width:200px;
+		height:200px;
+		background:red;
+	}
+
+</style>
+<script>
+	window.onload=function(){
+		var oBox=document.getElementById('box');
+		var s=1;
+		var ser=1;
+		oBox.addEventListener('touchstart',function(ev){
+			if(ev.tergetTouches[0].length>1){
+				var a=ev.targetTouches[0].pageX-ev.targetTouches[1].pageX;
+				var b=ev.targetTouches[0].pageY-ev.targetTouches[1].pageY;
+				var c=Math.sqrt(a*a+b*b);
+				
+				function move(ev){
+					var a=ev.targetTouches[0].pageX-ev.targetTouches[1].pageX;
+					var b=ev.targetTouches[0].pageY-ev.targetTouches[1].pageY;
+					var c1=Math.sqrt(a*a+b*b);
+					ser=c1/c;
+					oBox.style.webkitTransform='ser('+ser*s+')';
+				
+				};
+				function end(){
+					s*=ser;
+					oBox.innerHTML=s;
+					document.removeEventListener('touchmove',move,false);
+					document.removeEventListener('touchend',end,false);
+				};
+				document.addEventListener('touchmove',move,false);
+				document.addEventListener('touchend',end,false);
+				ev.preventDefault();
+			}
+		},false);
+	}
+</script>
+</head>
+
+
+<body>
+	<div id="box"></div>
+</body>
+</html>
