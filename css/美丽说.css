@@ -1,0 +1,169 @@
+@charset "utf-8";
+/* CSS Document */
+*{margin:0; padding:0; font-size:12px;}
+h1,h2,h3,h4,h5,h6{ font-weight:normal;} 
+a{ text-decoration:none; color:#666;} 
+i,em{ font-style:normal;} 
+b,strong{font-weight:normal;}
+ul,ol,dl,dd,dt{margin:0; padding:0; }
+li{list-style:none;}
+.clearfix:after{ display:block; content:''; clear:both;}
+.clearfix{ zoom:1;}
+img{ display:block; border:none;}
+a img{ border:none;}
+
+/*顶部*/
+.box{ width:1220px; height:38px; border-top:1px solid #eee; border-bottom:1px solid #eee; background:#f5f5f5; margin:0 auto;}
+.box ul{ width:705px; height:18px; float:right; padding:10px 0;}
+.box li{ float:left; height:18px; padding:0 16px; border-right:1px dashed #cbcbcb;}
+.box2{ float:left; padding-left:3px;}
+.box .box3{ border-right:none;}
+.box4{ width:850px; height:49px; padding:17px 0 0 370px; margin:0 auto; background:url(../img/logo_n4.png) no-repeat 15px 10px;}
+
+/*头部*/
+.top{ width:1220px; height:40px; background:#ff6599; margin:0 auto;}
+.top ul{ padding-left:136px; }
+.top li{ float:left;text-align:center; height:40px; line-height:40px; padding:0 15px;}
+.top li a{ font-size:14px; color:#fff;}
+
+.top1{ width:1200px; height:574px; margin:0 auto;}
+.top1-1{ width:198px; height:572px; border:1px solid #e6e6e6; float:left; padding:0 20px;}
+.tp1{ width:198px; height:102px; border-bottom:1px dashed #cbcbcb;}
+.zr-1 img{ float:left; padding-right:7px;}
+.zr-1 h2{ font-size:16px; float:left; color:#ff6699; font-weight:bold; }
+.zr-1{ width:198px; height:17px; margin:12px 0 14px 0;}
+.zr-2 li{ float:left; padding:0 15px 12px 0;}
+.zr-2 .zr2 a{color:#ff6699;}
+.tp111111{ border-bottom:none;}
+
+.top1-2{ width:760px; height:574px;float:left;}
+.top12-1{ width:760px; height:419px; border:1px solid #e6e6e6;}
+.top12-2{ width:738px; height:144px; padding:10px 11px 0;}
+.top12-2 a{ float:left; padding-right:10px;}
+.top12-2 img{ width:175px; height:142px; border:1px solid #e6e6e6;}
+.top12-2 .top12-2-a{ padding-right:0;}
+
+.top1-3{ width:200px; height:574px; float:left;}
+.tp3-1{ width:200px; height:420px;}
+.tp3-1 img{ width:200px; height:139px; border-bottom:1px solid #e6e6e6;}
+.top3-2{ width:198px; height:142px; border:1px solid #e6e6e6; margin-top:10px;}
+
+
+/*人气推荐单品*/
+.rq{ width:1200px; height:794px; margin:0 auto;}
+.rq-top{ width:1200px; height:52px; border-bottom:1px solid #e6e6e6; position:relative;}
+.r-t1{width:160px; height:26px; background:url(../img/wel_ico2.png) 0 0; position:absolute; top:20px; left:0;}
+.rqul-1{ width:180px; height:353px; padding-top:15px; float:left; padding-right:22px;}
+.rq-ul .rqzh{ padding-right:0;}
+.ml{ display:block; width:180px; height:30px; padding-top:8px;color:#666;}
+.qiang{ width:180px; font-size:14px; color:#ff7dc8; padding-bottom:12px; border-bottom:1px dashed #cbcbcb;}
+.rqul-1 .dazhe{ font-size:10px; color:#999; text-decoration:line-through; padding-left:10px;}
+.gm{ color:#666; padding-top:10px;}
+
+
+/*每日超值团购*/
+.cztg{ width:1200px; margin:0 auto;}
+.rq-top1{ width:1200px; height:52px; border-bottom:1px solid #e6e6e6; position:relative;}
+.r-t11{width:160px; height:26px; background:url(../img/wel_ico2.png) 0 -240px; position:absolute; top:20px; left:0;}
+.r-tl2{height:26px; line-height:26px; float:right; color:#999; font-size:14px; padding-top:20px;}
+
+
+
+
+/*双十二返场*/
+.sse{ width:1200px; height:100px; padding-top:40px; margin:0 auto;}
+
+
+
+/*衣服*/
+.yifu{ width:1200px; margin:0 auto;}
+.rq-yifu{ width:1200px; height:52px; border-bottom:1px solid #e6e6e6; position:relative;}
+.yifucon{ width:941px; height:611px; border-right:1px solid #e6e6e6; border-bottom:1px solid #e6e6e6; float:left;}
+.r-yifu{width:77px; height:26px; background:url(../img/wel_ico2.png) 0 -44px; position:absolute; top:20px; left:0;}
+.yifucon .leisi{ padding-top:5px;}
+.rqul-yifu{ width:180px; height:255px; padding-top:15px; float:left; padding-right:5px; position:relative;}
+.opabox{ width:180px; height:30px; position:absolute; left:0; bottom:0;}
+.opa{ width:100%; height:100%; position:absolute; left:0; top:0; background:#000; opacity:0.3; filter:alpha(opacity:50);}
+.con{ position:relative; color:#fff; font-size:14px; line-height:30px; text-align:center;}
+
+.yifu-bot{ float:left;}
+.bot1{ width:300px; height:44px; margin-top:23px; border-right:1px dashed #ccc; float:left;}
+.yifu-bot .bottt{ border-right:0;}
+.bot1 h3{ color:#ff6699; font-size:16px; float:left; height:44px; line-height:44px; padding:0 19px 0 12px;}
+.bot1 ul li{ color:#666;float:left; padding-right:11px; padding-bottom:10px;}
+
+.yifu-right{ width:238px; height:591px; border-bottom:1px solid #e6e6e6; padding:20px 0 0 20px; float:left;}
+.yfr-1{ padding-bottom:2px;}
+.yfr-1 h4{ font-size:16px; color:#666; float:left;}
+.yfr-1 span{ font-size:14px; color:#999; float:right;}
+.yjd{ padding:14px 0; border-bottom:1px dashed #ccc;}
+.yjd img{width:32px; height:32px; border:1px solid #e6e6e6; float:left; margin-right:12px;}
+.yjd p{ color:#666; height:34px; line-height:18px;}
+.yjd span{ color:#999;}
+.yifu-right .zrzh{ border-bottom:0;}
+
+
+/*鞋子*/
+.rq-xiezi{ width:1200px; height:52px; border-bottom:1px solid #e6e6e6; position:relative;}
+.r-xiezi{width:77px; height:26px; background:url(../img/wel_ico2.png) 0 -82px; position:absolute; top:20px; left:0;}
+
+/*包包*/
+.rq-baobao{ width:1200px; height:52px; border-bottom:1px solid #e6e6e6; position:relative;}
+.r-baobao{width:77px; height:26px; background:url(../img/wel_ico2.png) 0 -120px; position:absolute; top:20px; left:0;}
+
+/*配饰*/
+.rq-peishi{ width:1200px; height:52px; border-bottom:1px solid #e6e6e6; position:relative;}
+.r-peishi{width:77px; height:26px; background:url(../img/wel_ico2.png) 0 -158px; position:absolute; top:20px; left:0;}
+
+/*杂志*/
+.rq-zz{ width:1200px; height:52px; border-bottom:1px solid #e6e6e6; position:relative;}
+.r-zz{width:118px; height:26px; background:url(../img/wel_ico2.png) 0 -200px; position:absolute; top:20px; left:0; float:left;}
+
+
+/*热门杂志*/
+.rmzz{ width:1200px; margin:0 auto; margin-bottom:20px;}
+.rm-zz{ width:1200px; height:52px;position:relative;}
+.zz-ul{ float:right; padding:18px 0;}
+.zz-ul .zzul-li{ float:left; height:16px; line-height:16px; padding:0 15px; border-right:1px dotted #ccc;}
+.zz-ul a{ font-size:14px; color:#999;}
+.zz-ul .qudiao{ border:0;}
+
+
+
+
+.rmcon1-li{ width:200px; height:257px; border:1px solid #ddd; padding:13px; float:left; margin-right:15px;}
+.rmcon1-li h5 a{ font-size:14px; color:#666; font-weight:bold; padding-bottom:10px;}
+.rmcon1-li h5{ padding-bottom:10px;}
+.rmcon1-li img{ padding-bottom:13px;}
+.rmcon1-li p{ color:#999; float:left; width:200px; height:20px; display:block; line-height:20px;}
+.rmcon1-li p a{ width:64px; height:20px; color:#fff; background:#ff6699; display:block; float:right; line-height:20px; text-align:center;border-radius:5px;}
+.rmcon-1 .rncon-li2{ margin-right:0;}
+
+
+
+/*底部*/
+.com-bot{ width:1200px; height:280px; border-top:1px solid #ddd; margin:0 auto; background:#f5f5f5; padding:30px 10px 0 10px; }
+.mls-bottom{border-bottom:1px solid  #e6e6e6;}
+.mls-dh{ width:242px; height:160px; position:relative; float:left;}
+.mls-dh .img{ float:left;width:35px; height:35px; background:url(../img/102.png) 0 -114px; position:absolute;top:1px; left:2px; }
+.mls-dh .mls-dh-ul{ margin-left:48px; float:left; width:192px; height:70px;}
+.mls-dh-ul .ul-li-1{ font-size:16px; color:#666;}
+.mls-dh-ul .kefu{ font-size:14px; color:#666; padding:10px 0;}
+.mls-dh-ul .ul-li-2{ font-size:12px; color:#666; padding-top:4px;}
+
+.yhbz{ float:left; margin-right:58px;}
+.yhbz h2{ font-size:16px; color:#666; padding-bottom:20px;}
+.yhbz .yhbz-li{ font-size:12px; color:#666; padding-bottom:14px;}
+.yhbz img{ width:115px; height:115px;}
+
+
+.mls-khdxz{ float:right; position:relative;}
+.mls-khdxz h2{ font-size:16px; color:#666; padding-bottom:20px;}
+.mls-khdxz a{ width:131px; height:98px; background:url(../img/102.png) 0 -401px; position:absolute;top:33px; right:5px;}
+
+.bottom-yqlj{height:30px; line-height:30px; color:#666; font-size:12px; border-bottom:1px solid #e6e6e6;}
+.bottom-yqlj .yqlj-li{ float:left; padding-right:11px;}
+.bottom-yqlj .yqlj-li1{ float:right; color:#666;}
+
+
+.footer{ font-size:12px; color:#666; line-height:22px; margin-top:10px;}
