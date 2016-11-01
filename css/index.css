@@ -62,7 +62,7 @@ a img{ border:none;}
 /*专业技能*/
 #Skill{ width:100%;height:650px; background:url(../img/tree.png); background-size:100% 100%;}
 .Skill h4{ text-align:center;font-size:30px; margin:20px 0; -webkit-text-stroke:1px #CCC;}
-
+.Skill .sk p{ margin:20px 0;}
 
 /*联系方式*/
 #contact{ width:100%; height:300px; background:#000; opacity:0.5;}
