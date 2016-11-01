@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>无缝运动</title>
+	<link rel="stylesheet" href="">
+	<style>
+		*{margin: 0;padding: 0;list-style: none;}
+		.box{width: 1040px;height: 170px;margin: 100px auto;position: relative;overflow: hidden;border: 1px solid purple;}
+		.box ul{width: 2080px;height: 170px;position: absolute;left:0;top: 0;}
+		.box ul li{width: 250px;height: 160px;margin:5px;float: left;}
+		.box ul li img{width: 250px;height: 160px;}
+	</style>
+	<script>
+		window.onload=function(){
+			var obox = document.getElementById('box');
+			var oul = document.getElementById('ul');
+			var oli = oul.getElementsByTagName('li');
+			oul.innerHTML+=oul.innerHTML;
+			var count = 0;
+			var timer = null;
+			var oulw = oul.offsetWidth/2;//1040
+			function toright(){
+				timer=setInterval(function(){
+				count+=4;
+				console.log(count);
+				if (count<0) {
+					count=count%oulw;
+				}else{
+					count=(count%oulw-oulw)%oulw;
+				}
+				oul.style.left=count+'px';
+			},30)
+			}
+			function toleft(){
+				timer=setInterval(function(){
+					count-=4;
+					console.log(count);
+					if (count<0) {
+						count=count%oulw;
+					}else{
+						count=(count%oulw-oulw)%oulw;
+					}
+					oul.style.left=count+'px';
+				},30)
+			}
+			toleft();
+			/*toright();*/
+		}
+	</script>
+</head>
+<body>
+<div class="box" id="box">
+	<ul id="ul">
+		<li><img src="img1/1.jpg" alt=""></li>
+		<li><img src="img1/2.jpg" alt=""></li>
+		<li><img src="img1/3.jpg" alt=""></li>
+		<li><img src="img1/4.jpg" alt=""></li>
+	</ul>
+</div>	
+</body>
+</html>

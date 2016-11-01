@@ -1,0 +1,76 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>3D环形图</title>
+<style>
+*{ margin:0; padding:0; list-style:none; }
+body{ background:rgba(0,0,0,0.7); }
+ul{ width:133px; height:200px; margin:200px auto; position:relative; transform-style:preserve-3d; transform:perspective(1200px); }
+li{ position:absolute; left:0; top:0; border-radius:10px; overflow:hidden; box-shadow:0 0 20px #fff; transform:rotate(0deg) translateZ(0); border:1px solid #ccc; }
+</style>
+<script>
+window.onload=function (){
+	var oUl=document.querySelector('ul');
+	var aLi=oUl.children;
+	
+	for(var i=0; i<aLi.length; i++){
+		aLi[i].style.transition='1s all ease '+(11-i)*100+'ms';
+		aLi[i].style.transform='rotateY('+360/11*i+'deg) translateZ(350px)';
+	}
+	
+	var x=0;
+	var y=0;
+	oUl.onmousedown=function (ev){
+		var disX=ev.pageX-x;
+		var disY=ev.pageY-y;
+		document.onmousemove=function (ev){
+			x=ev.pageX-disX;
+			y=ev.pageY-disY;
+			oUl.style.transform='perspective(1200px) rotateX('+-y/5+'deg) rotateY('+x/5+'deg)';
+		};
+		document.onmouseup=function (){
+			document.onmousemove=null;
+			document.onmouseup=null;
+		};
+		return false;
+	};
+};
+</script>
+</head>
+
+<body>
+	<ul>
+    	<li><img src="img2/10.jpg"/></li>
+    	<li><img src="img2/11.jpg" /></li>
+    	<li><img src="img2/1.jpg" /></li>
+    	<li><img src="img2/2.jpg" /></li>
+    	<li><img src="img2/3.jpg" /></li>
+    	<li><img src="img2/4.jpg" /></li>
+    	<li><img src="img2/5.jpg" /></li>
+    	<li><img src="img2/6.jpg" /></li>
+    	<li><img src="img2/7.jpg" /></li>
+    	<li><img src="img2/8.jpg" /></li>
+    	<li><img src="img2/9.jpg" /></li>
+    </ul>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

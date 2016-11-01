@@ -1,0 +1,102 @@
+@charset "UTF-8";
+/* CSS Document */
+
+*{margin:0; padding:0; list-style:none;}
+a{text-decoration:none; color:#999;}
+html{font-size:20px;}
+
+/*header*/
+.wrap{ width:16rem;}
+.wrap header{ width:16rem; height:2.525rem; background:-webkit-linear-gradient(#fff,#ebebeb); position:relative; text-align:center;}
+header .back{ width:3.25rem; height:1.6rem; position:absolute; background:url(img/back.png) no-repeat; text-indent:-999999px; background-size:100%; left:0.5rem; top:0.5rem;}
+header .logo{ width:9.4rem; height:2.2rem; margin-top:0.175rem;}
+/*banner*/
+.banner{ width:16rem; height:7.45rem;overflow:hidden; position:relative;}
+.banner ul{ position:absolute; width:80rem; height:6.675rem; }
+.banner ul li{ float:left; width:16rem; height:6.675rem;}
+.banner ul li img{ width:100%;}
+.banner ol{ position:absolute; bottom:0; width:2.5rem; left:50%; margin-left:-1.25rem;}
+.banner ol li{float:left; width:0.25rem; height:0.25rem; border-radius:50%; background:#a9a9a9; text-indent:-99999px; margin:0 0.125rem;} 
+.banner ol li.active{ background:#ff4300;}
+/*icon*/
+.icon .icon-list{ overflow:hidden; width:16rem;}
+.icon .icon-list li{ float:left; width:25%; padding-top:1rem; font-size:0.55rem; text-align: center; }
+.icon .icon-list li a{display:block;}
+.icon .icon-list li span{ padding: 10px 0 0 0;display:block;width:100%;}
+.icon .icon-list li img{ width:2rem; margin:0 auto; }
+/*hot*/
+.hot{padding:0 0.5rem;}
+.hot .juhuasuan{overflow:hidden; color:#333; font-weight:bold; border-bottom:0.1rem solid #dcdcdc;
+ padding-bottom:0.525rem; margin-top:1.6rem; line-height:0.75rem;}
+.hot .juhuasuan-left{float:left; font-size:0.65rem; border-left:0.1rem solid #d51938; padding-left:0.45rem;}
+.hot .juhuasuan-right{float:right; font-size:0.55rem;}
+.hot .hot-list{margin-top:0.775rem;}
+.hot .hot-list li{overflow:hidden; margin-bottom:0.5rem;}
+.hot .hot-list li .hot-pic{overflow:hidden; float:left; width:6rem;}
+.hot .hot-list li .hot-pic i{float:left; width:1.5rem; height:3rem; background:url(img/3.png) no-repeat; background-size:100%;}
+.hot .hot-list li .hot-pic img{float:left; width:4.5rem; height:3rem;}
+.hot .hot-list li .jiawei{float:right; width:9rem; height:3rem; background:#f4f4f4; font-size:0.55rem; color:#999;
+line-height:0.9rem; overflow:hidden;}
+.hot .hot-list li .jiawei .yishou{float:left; margin-left:0.55rem; margin-top:0.55rem;}
+.hot .hot-list li .jiawei .yishou .old .old-jiage{text-decoration:line-through; margin-left:0.65rem;}
+.hot .hot-list li .jiawei .new{float:right; font-size:0.65rem; line-height:1.825rem; margin-right:0.5rem;
+margin-top:0.55rem;}
+.hot .hot-list li .jiawei .new .new-red{color:#d51938;}
+.hot .hot-list li .jiawei .new .more{font-weight:bold; color:#ccc;}
+/*con*/
+.con{padding:0 0.5rem;}
+.con .guang{display:block; width:100%; height:2rem; background:#f5f5f5; font-size:0.65rem; line-height:2rem;
+text-align:center; color:#666; overflow:hidden;}
+.con .guang .juzhong{float:left; margin-left:4.8rem;}
+.con .guang .more{float:right; color:#ccc; font-weight:bold; margin-right:0.45rem;}
+.con .fenlei{width:100%; overflow:hidden; margin-top:0.5rem; margin-bottom:0.5rem;}
+.con .gao{margin-top:0.75rem;}
+.con .fenlei img{float:left; width:3.75rem; height:8.825rem;}
+.con .fenlei .shangpin-list{float:right; border-top:1px solid #eee; width:11.25rem;}
+.con .fenlei .shangpin-list li{border-bottom:1px solid #eee; border-right:1px solid #eee; font-size:0.65rem;
+color:#999; line-height:2.16rem; text-align:center; width:3.7rem; height:2.16rem; float:left;}
+/*客户端*/
+.kehuduan{padding:0 0.5rem; margin-top:0.75rem; margin-bottom:0.7rem;}
+.kehuduan .kehuduan-list{overflow:hidden; width:100%; height:3.95rem; border:1px solid #dcdcdc;}
+.kehuduan .kehuduan-list li{float:left; width:33%; height:3.95rem; line-height:1.85rem;} 
+.kehuduan .kehuduan-list .middle{border-left:1px solid #dcdcdc; border-right:1px solid #dcdcdc;}
+.kehuduan .kehuduan-list li a{display:block; overflow:hidden;  color:#999; font-size:0.55rem;  text-align:center; 
+margin-top:0.75rem; margin-bottom:0.225rem;}
+.kehuduan .kehuduan-list li i{display:block; width:0.95rem; height:1.1rem; background:url(img/pingguo.png) no-repeat; background-size:100%; margin-left:2rem;}
+.kehuduan .kehuduan-list li span{display:block;}
+/*foot*/
+.foot-top{width:14.5rem; height:2.2rem; background:#f8f8f8; font-size:0.65rem; line-height:2.2rem; overflow:hidden;
+padding:0 0.75rem;}
+.foot-top a{color:#333;}
+.foot-top .dengzhu{float:left; overflow:hidden;}
+.foot-top .dengzhu .denglu{float:left; margin-right:1.2rem;}
+.foot-top .dengzhu .zhuce{float:left; }
+.foot-top  .top{float:right;}
+.foot-down{width:100%; height:8.6rem; background:#eee; text-align:center;}
+.foot-down .ban{font-size:0.65rem; color:#333; line-height:2.55rem;}
+.foot-down p{font-size:0.5rem; color:#999;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,70 @@
+/*清除默认样式*/
+*{margin:0; padding:0;font-family:微软雅黑;}
+h1,h2,h3,h4,h5,h6{ font-weight:normal;} 
+a{ text-decoration:none; color:#000;} 
+i,em{ font-style:normal;} 
+b,strong{font-weight:normal;}
+ul,ol,dl,dd,dt{margin:0; padding:0; }
+li{list-style:none;}
+.clearfix:after{ display:block; content:''; clear:both;}
+.clearfix{ zoom:1;}
+img{ display:block; border:none;}
+a img{ border:none;}
+.fl{ float:left;}
+.fr{ float:right;}
+.all{ width:980px; margin:0 auto;}
+
+
+/*头部-首页*/
+	#head{background:#000; width:100%; height:80px; color:#FFF; opacity:0.5; position:fixed; left:0; top:0;}
+	.head a{ color:#fff;}
+	.head{height:80px; line-height:80px;}
+	.head .fr .head-ul .fl{ padding:0 10px;}
+	.head-ul a{color:#FFF;}
+	.head a:hover{color:#FF0;}
+/*index 内容*/
+	.content{background:url(../img/nod3.jpg) no-repeat bottom center; color:#FFF; font-weight:bold; font-size:30px; text-align:center; padding-top:300px;width:100%; height:500px;}
+	.content span{ color:#FF0;}
+/*remuse*/
+.resume-1{ background:#999;}
+.resume .title{text-align:center; color:#fff; width:100%; height:80px; background:url(../img/fenge.gif) no-repeat center;}
+.resume .clock{width:300px; height:300px; background:url(../img/clock.png) no-repeat; border-radius:50%; position:relative; margin:20px;}
+.resume .clock .hou{width:8px; height:80px; background:#FF0; border-radius:50% 50% 0 0; position:absolute; left:50%; margin-left:-5px; top:70px; -webkit-transform-origin:bottom;}
+.resume .clock .min{width:6px; height:100px; background:aqua; border-radius:50% 50% 0 0; position:absolute; left:50%; margin-left:-4px; top:50px; -webkit-transform-origin:bottom;}
+.resume .clock .sec{width:4px; height:120px; background:red; border-radius:50% 50% 0 0; position:absolute; left:50%; margin-left:-3px; top:30px; -webkit-transform-origin:bottom;}
+
+.resume .clock span{width:4px; height:8px; background:rgba(40%,100%,100%,.5); position:absolute; left:50%; margin-left:-2px; top:0; -webkit-transform-origin:center 150px; }
+.resume .clock span.big_scale{height:15px; width:6px; margin-left:-3px;}
+.resume .clock span.big_scale em{position:absolute; top:15px; left:50%; margin-left:-15px; font-style:normal; width:30px;  text-align:center; font-weight:bold; color:#FF6;}
+.resume .clock .cap{position:absolute; width:16px; height:16px; left:50%; top:50%; margin-left:-8px; margin-top:-8px; background:-webkit-radial-gradient(#fff,pink); border-radius:50%;}
+
+.resume .resume-left #writer{margin-top:60px; margin-left:10px; width:420px; font-size:22px; line-height:28px; font-weight:bold; font-family:微软雅黑;  background:-webkit-linear-gradient(-45deg,red,pink,aqua,green,blue,yellow,orange,white);-webkit-background-clip:text; color:rgba(0,0,0,0);}
+.resume .resume-left #writer span{ opacity:0;}
+
+.resume .resume-con .con-left{padding-right:20px; text-align:right;}
+.resume .resume-con .con-left .touxiang{width:150px; height:200px;}
+.resume .resume-con .con-left h2{font-size:40px; font-weight:bold; line-height:80px;}
+.resume .resume-con .con-left .Success{font-size:16px; color:#CCC; line-height:24px;}
+.resume .resume-con .con-left .English{color:#000; line-height:16px; font-size:14px;}
+.resume .resume-con .con-left .Look{font-size:26px; font-family:微软雅黑; margin-top:10px; line-height:40px;} 
+.resume .resume-con .con-right{padding-left:20px; border-left:1px dotted #CFF;}
+.resume .resume-con .con-right .information .information-title .zhongwen{font-size:18px; line-height:38px; font-weight:bold;}
+.resume .resume-con .con-right .information .information-title .yingwen{font-size:14px; line-height:38px; color:#666;}
+.resume .resume-con .con-right .information p{color:#000; font-size:14px; line-height:24px; width:260px;}
+
+/*作品展示*/
+#works{ background:-webkit-linear-gradient(bottom,#999,#fff); width:100%; height:650px;}
+.works h4{ text-align:center;font-size:30px; margin:20px 0; -webkit-text-stroke:1px #CCC;}
+.works img{ width:200px; height:200px;}
+.works li{ margin:20px;}
+
+
+/*专业技能*/
+#Skill{ width:100%;height:650px; background:url(../img/tree.png); background-size:100% 100%;}
+.Skill h4{ text-align:center;font-size:30px; margin:20px 0; -webkit-text-stroke:1px #CCC;}
+
+
+/*联系方式*/
+#contact{ width:100%; height:300px; background:#000; opacity:0.5;}
+.contact{ color:#FFF;}
+.contact h4{ text-align:center;font-size:30px; margin:20px 0; -webkit-text-stroke:1px #CCC;}
