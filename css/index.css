@@ -22,9 +22,7 @@ a img{ border:none;}
 	.head .fr .head-ul .fl{ padding:0 10px;}
 	.head-ul a{color:#FFF;}
 	.head a:hover{color:#FF0;}
-/*index 内容*/
-	.content{background:url(../img/nod3.jpg) no-repeat bottom center; color:#FFF; font-weight:bold; font-size:30px; text-align:center; padding-top:300px;width:100%; height:500px;}
-	.content span{ color:#FF0;}
+
 /*remuse*/
 .resume-1{ background:#999;}
 .resume .title{text-align:center; color:#fff; width:100%; height:80px; background:url(../img/fenge.gif) no-repeat center;}
@@ -61,10 +59,19 @@ a img{ border:none;}
 
 /*专业技能*/
 #Skill{ width:100%;height:650px; background:url(../img/tree.png); background-size:100% 100%;}
-.Skill h4{ text-align:center;font-size:30px; margin:20px 0; -webkit-text-stroke:1px #CCC;}
+.Skill h4{ text-align:center;font-size:30px;margin-bottom:20px; -webkit-text-stroke:1px #CCC;}
+.Skill .sk{ margin:100px 0;}
 .Skill .sk p{ margin:20px 0;}
+
+/*工作经验*/
+#experience{ width:100%;height:650px; background:url(../img/tree.png); background-size:100% 100%;}
+.experience h4{ text-align:center;font-size:30px;margin-bottom:20px; -webkit-text-stroke:1px #CCC;}
+.experience .sk{ margin:100px 0;}
+.experience .sk h5{ font-size:20px; color:#F00;}
+.experience .sk p{ margin:20px 0;}
 
 /*联系方式*/
 #contact{ width:100%; height:300px; background:#000; opacity:0.5;}
 .contact{ color:#FFF;}
-.contact h4{ text-align:center;font-size:30px; margin:20px 0; -webkit-text-stroke:1px #CCC;}
+.contact h4{ text-align:center;font-size:30px; margin-bottom:20px; -webkit-text-stroke:1px #CCC;}
+.contact .cont .cont-div{ width:30%; text-align:center; height:200px;  float:left; line-height:200px; font-size:18px;}
